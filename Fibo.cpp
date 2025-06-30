@@ -3,7 +3,7 @@
 
 int fibo(int n)
     {
-        static int *arr = (int *)malloc((n + 1) * sizeof(int));
+        static int *arr = (int *)malloc((n + 1) * sizeof(int)); //Remember to delete the array. Also, this one's the C format, use the new operator for C++.
   
         arr[0] = 0;
         
