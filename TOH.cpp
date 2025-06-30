@@ -1,4 +1,5 @@
 //Tower Of Hanoi Problem
+//O(2^n)
 
 void TOH(int n, int A, int B, int C){
   if (n>0){
