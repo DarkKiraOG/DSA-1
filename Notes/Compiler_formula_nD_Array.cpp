@@ -8,6 +8,7 @@ Row Major Formula:            Address(array[i][j][k][l]) = Address(array) + [i*b
 We can make it more efficient by reversing the terms in the bracket and taking out common factors:
 
 -> Address(array) + [l + d*[k + c*[j + b*[i]]]] * sizeoftype
+Now: Time Complexity of Operations: O(n)
 
 Column Major Formula:         Address(array[i][j][k][l]) = Address(array) + [l*a*b*c + k*b*c + j*a + i] * sizeoftype
 
