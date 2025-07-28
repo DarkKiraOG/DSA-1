@@ -33,7 +33,7 @@ void Append(struct Array *arr, int x){
 
 // Insert 
 
-void Insert(struct Array *arr, int n, int x){
+void Insert(struct Array *arr, int n, int x){                                                               //self made         //pending check: if index>0 and index < arr.length
     if (arr -> length < arr -> size)
         int holder;
         for (int i = n; i < A -> size; i++)
