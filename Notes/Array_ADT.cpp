@@ -1,3 +1,6 @@
+//////////////////////////
+// MIX OF C AND C++
+
 #include<stdio.h>
 
 struct Array
@@ -5,7 +8,7 @@ struct Array
     int *A;
     int size;
     int length;
-}
+};
 
 int main()
 {
@@ -31,9 +34,9 @@ void Append(struct Array *arr, int x){
         arr -> A[arr -> length++] = x;
 }
 
-// Insert 
+// Insert   //self made 
 
-void Insert(struct Array *arr, int n, int x){                                                               //self made         //pending check: if index>0 and index < arr.length
+void Insert(struct Array *arr, int n, int x){              //pending check: if index>0 and index < arr.length
     if (arr -> length < arr -> size)
         int holder;
         for (int i = n; i < A -> size; i++)
@@ -52,4 +55,26 @@ void Insert(struct Array *arr, int index, int x){
         arr -> A[index] = x;
         arr -> length++; }
 }
+
+
+// Delete     //self made
+
+void Delete(struct Array *arr. int index) {
+    if (index >=0 && index <= arr -> length){
+        for (int i = index; i < (arr -> length) - 2; i++)
+            {
+                arr -> A[i] = arr -> A[i+1];
+            }
+        arr -> A[arr->length - 1] = 0;
+    }
+    
+}
+
+
+
+}
+
+
+
+
 
