@@ -61,11 +61,12 @@ void Insert(struct Array *arr, int index, int x){
 
 void Delete(struct Array *arr. int index) {
     if (index >=0 && index <= arr -> length){
-        for (int i = index; i < (arr -> length) - 2; i++)
+        for (int i = index; i < (arr -> length) - 1; i++)
             {
                 arr -> A[i] = arr -> A[i+1];
             }
-        arr -> A[arr->length - 1] = 0;
+        arr -> length --;
+    
     }
     
 }
