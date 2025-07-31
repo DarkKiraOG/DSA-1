@@ -71,4 +71,4 @@ int main()
 // Time complexity varies from  O(1) to O(log n)
 // For unsuccessful cases: it's always O(log n)
 
-//Avg Case- O(log n)
+//Avg Case- O(log n)    //for both: successful as well as unsuccessful
